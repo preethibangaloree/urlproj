@@ -1,0 +1,4 @@
+<%= form_for @urll, url: urlls_path do |form| %>
+  <%= form.text_field :long_url, placeholder: 'Enter a long URL' %>
+  <%= form.submit 'Shorten URL' %>
+<% end %>

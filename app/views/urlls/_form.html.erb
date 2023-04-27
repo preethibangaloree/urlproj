@@ -1,0 +1,11 @@
+<%= form_with(model: urll) do |form| %>
+
+  <div>
+    <%= form.label :long_url, style: "display: block" %>
+    <%= form.text_field :long_url %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

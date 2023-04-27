@@ -1,0 +1,9 @@
+
+
+<% @urlls.each do |url| %>
+  <ul> 
+    <p>Original URL: <%= link_to url.long_url, url.long_url %></p>
+    <b>  Short url:<b><td><%= link_to url.short_url, "/#{url.short_url}" %></td>
+  </ul>
+<% end %>
+<%= link_to 'Create another link', new_urll_path %>
